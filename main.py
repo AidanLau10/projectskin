@@ -2,7 +2,7 @@ import threading
 
 # import "packages" from flask
 from flask import render_template  # import render_template from "public" flask libraries
-
+from flask import Flask, jsonify
 # import "packages" from "this" project
 from __init__ import app,db  # Definitions initialization
 from model.jokes import initJokes
@@ -50,9 +50,35 @@ def activate_job():  # activate these items
     initUsers()
     initPlayers()
 
+@app.route('/api/data')
+def get_data():
+    # start a list, to be used like a information database
+    user_stats = []
+
+    # add a row to list, an Info record
+    user_stats.append({
+        "ingredient_id": 12345,
+        "ingredient_name": "Glycerin",
+        "purpose": "Moisturizer",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/glycerin",
+    })
+
+    # add a row to list, an Info record
+    user_stats.append({
+        "ingredient_id": 12346,
+        "ingredient_name": "Hyaluronic Acid",
+        "purpose": "Moisturizer",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/hyaluronic-acid",
+    })
+    
+    return jsonify(user_stats)
+
+
 # this runs the application on the development server
 if __name__ == "__main__":
     # change name for testing
     from flask_cors import CORS
     cors = CORS(app)
-    app.run(debug=True, host="0.0.0.0", port="8022")
+    app.run(debug=True, host="0.0.0.0", port="5001")
