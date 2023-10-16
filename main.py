@@ -73,6 +73,14 @@ def get_data():
         "fda_url": "https://incidecoder.com/ingredients/hyaluronic-acid",
     })
     
+    user_stats.append({
+        "ingredient_id": 12347,
+        "ingredient_name": "Hyaluronic Acid",
+        "purpose": "Moisturizer",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/hyaluronic-acid",
+    })
+    
     return jsonify(user_stats)
 
 
