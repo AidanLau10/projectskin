@@ -57,29 +57,93 @@ def get_data():
 
     # add a row to list, an Info record
     user_stats.append({
-        "ingredient_id": 12345,
+        "ingredient_id": 10000,
         "ingredient_name": "Glycerin",
-        "purpose": "Moisturizer",
+        "purpose": "Skin-Identical Ingredient, Moisturizer",
         "rating": "Goodie",
         "fda_url": "https://incidecoder.com/ingredients/glycerin",
     })
 
     # add a row to list, an Info record
     user_stats.append({
-        "ingredient_id": 12346,
+        "ingredient_id": 10001,
         "ingredient_name": "Hyaluronic Acid",
-        "purpose": "Moisturizer",
+        "purpose": "Skin-Identical Ingredient, Moisturizer",
         "rating": "Goodie",
         "fda_url": "https://incidecoder.com/ingredients/hyaluronic-acid",
     })
     
     user_stats.append({
-        "ingredient_id": 12347,
-        "ingredient_name": "Hyaluronic Acid",
-        "purpose": "Moisturizer",
+        "ingredient_id": 10002,
+        "ingredient_name": "Niacinamide",
+        "purpose": "Cell-Communicating Ingredient, Skin Brightening, Anti-Acne, Moisturizer",
         "rating": "Goodie",
-        "fda_url": "https://incidecoder.com/ingredients/hyaluronic-acid",
+        "fda_url": "https://incidecoder.com/ingredients/niacinamide",
     })
+    
+    user_stats.append({
+        "ingredient_id": 10003,
+        "ingredient_name": "Glycolic Acid",
+        "purpose": "Exfoliant, Buffering",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/glycolic-acid",
+    })
+    
+    user_stats.append({
+        "ingredient_id": 10004,
+        "ingredient_name": "Snail Secretion Filtrate",
+        "purpose": "Antioxidant, Moisturizer",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/snail-secretion-filtrate",
+    })
+    
+    user_stats.append({
+        "ingredient_id": 10005,
+        "ingredient_name": "Lactic Acid",
+        "purpose": "Exfoliant, Moisturizer, Buffering",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/lactic-acid",
+    })
+    
+    user_stats.append({
+        "ingredient_id": 10006,
+        "ingredient_name": "Retinol",
+        "purpose": "Cell-Communicating Ingredient",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/retinol",
+    })
+    
+    user_stats.append({
+        "ingredient_id": 10007,
+        "ingredient_name": "Tretinoin",
+        "purpose": "Cell-Communicating Ingredient",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/tretinoin",
+    })
+    
+    user_stats.append({
+        "ingredient_id": 10008,
+        "ingredient_name": "Pantheol",
+        "purpose": "Soothing, Moisturizer",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/pantheol",
+    })
+    
+    user_stats.append({
+        "ingredient_id": 10009,
+        "ingredient_name": "1,2-Hexanediol",
+        "purpose": "Solvent",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/1-2-hexanediol",
+    })
+    user_stats.append({
+        "ingredient_id": 10010,
+        "ingredient_name": "1,2-Hexanediol",
+        "purpose": "Solvent",
+        "rating": "Goodie",
+        "fda_url": "https://incidecoder.com/ingredients/1-2-hexanediol",
+    })
+    
     
     return jsonify(user_stats)
 
